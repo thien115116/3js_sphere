@@ -1,3 +1,6 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap')
 *
 {
     margin: 0;
@@ -9,12 +12,52 @@ body
 {
     height: 100vh;
     font-family: 'Poppins';
+    background-color: rgb(29, 29, 29);
 }
-
+body{
+   overflow-x: hidden; 
+}
+h1{
+    font-size: 10em;
+    color: aliceblue;
+    font-family: 'Berkshire Swash', cursive;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
 .webgl
 {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     outline: none;
+    mix-blend-mode: exclusion;
+}
+section{
+    height: 20vh;
+}
+.section{
+    text-align: center;
+}
+.section .btn{
+    height: 40px;
+    width: 300px;
+    background-color: darksalmon;
+    border-radius: 5px;
+    color: darkslategray;
+    font-size: 1.6rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.section .btn:hover{
+    box-shadow: 3px 3px 3px #ffffff;
+    background-color: brown;
+    color: deepskyblue;
+}
+/* Responsive at breakpoint 1015px */
+@media(max-width : 1015px){
+    body h1{
+        font-size: 7em;
+    }
 }
